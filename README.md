@@ -42,9 +42,9 @@
     <section class="intro" id="about">
       <div class="section-title">About Us</div>
       <p class="intro-text">
-        Team Cossassin은 [여기에 팀 소개 적어야 하묘] 게임 개발팀입니다.<br/>
+        TEAM COSSASSIN은 날카로운 기획력과 정밀한 코드로, 장르의 틈새를 파고드는 게임 개발팀입니다.<br/>
         우리는 색다른 게임 아이디어를 현실로 만드는 데 집중하며,<br/>
-        재미와 감동을 동시에 전하는 게임을 만들고 있습니다.는 내맘대로 쓴거고 좀더 보충
+        재미와 감동, 쾌감을 게임을 통해 동시에 전달합니다.
       </p>
     </section>
 
@@ -53,7 +53,7 @@
   <div class="card-container">
     <div class="card">
       <h3>이가을</h3>
-      <p>팀 대표, 기획, 홍보 담당자<br><span class="role">Team Leader, Marketing & PR</span></p>
+      <p>대표<br><span class="role">Team Leader</span></p>
     </div>
     <div class="card">
       <h3>장기성</h3>
@@ -73,7 +73,7 @@
     </div>
     <div class="card">
       <h3>이재학</h3>
-      <p>기획자<br><span class="role">Planner</span></p>
+      <p>기획<br><span class="role">Game Design</span></p>
     </div>
   </div>
 </section>

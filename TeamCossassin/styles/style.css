@@ -1,0 +1,425 @@
+body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #000000;
+      color: #ffffff;
+      padding-top: 70px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .team-title {
+      font-family: 'Anton', sans-serif;
+      font-size: 100px;
+      color: #F97A00;
+      margin-bottom: 20px;
+    }
+
+    .main-image img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    section {
+      margin-bottom: 80px;
+    }
+
+    @media (max-width: 600px) {
+        section {
+            margin-bottom: 50px;
+        }
+    }
+
+    .section-title {
+      font-size: 35px;
+      font-weight: bold;
+      border-bottom: 2px solid #F97A00;
+      padding-bottom: 10px;
+      margin-bottom: 30px;
+    }
+
+    .intro-text {
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .activities ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .activities li {
+      margin: 10px 0;
+      font-size: 16px;
+    }
+
+    .social-icons {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.social-icons .section-title {
+  margin-bottom: 16px;
+
+}
+    .social-icons a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #F97A00;
+  margin: 0 12px;
+  transition: opacity 0.2s;
+}
+
+
+    .social-icons a:hover {
+        opacity: 0.8;
+    }
+
+    .icon-img {
+        height: 26px;
+        width: 26px;
+        object-fit: contain;
+    }
+
+
+    footer {
+      font-size: 14px;
+      color: #888888;
+      margin-top: 40px;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 40px;
+      }
+    }
+
+    .team-cards .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: #1e1e1e;
+  border: 2px solid #F97A00;
+  border-radius: 12px;
+  width: 180px;
+  padding: 20px;
+  box-shadow: 2px 4px 8px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #F97A00;
+}
+
+.card h3,
+.section-title {
+  color: #F97A00;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.card .role {
+  font-size: 14px;
+  color: #888;
+}
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0, 0, 0, 0.95); /* 약간 투명한 검은색 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.nav-container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-right {
+  display: flex;      /* 가로 정렬 */
+  flex-direction: row;  /* 명시해줘도 좋음 */
+  gap: 39px;          /* 간격 */
+  align-items: center;
+}
+
+
+.nav-left a,
+.nav-right a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-left a:hover,
+.nav-right a:hover {
+  color: #F97A00;
+}
+
+.logo {
+  font-family: 'Anton', sans-serif;
+  font-size: 24px;
+  color: #F97A00;
+  text-decoration: none;
+}
+
+.logo-left {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo-img {
+  height: 40px;        /* 로고 이미지의 최대 높이 제한 */
+  object-fit: contain; /* 비율 유지하면서 딱 맞게 */
+  display: block;
+}
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+#about, #team {
+  scroll-margin-top: 80px;  /* 헤더 높이만큼 여유 줌 */
+}
+
+.typing {
+  display: inline-block;
+  font-family: 'Anton', sans-serif;
+  font-size: 100px;
+  color: #F97A00;
+  border-right: 5px solid #F97A00;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2.5s steps(15) forwards, blink 0.7s step-end 2.5s 5,
+  hide-cursor 0.1s linear 6s forwards;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 15ch }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+  100% { border-color: #F97A00 }
+}
+@keyframes hide-cursor {
+  to { border-right: none; }
+}
+
+.main-image-slider {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 60px;
+  border-radius: 16px;
+  overflow: hidden;
+  
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 500px; /* 원하는 슬라이더 높이 */
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000; /* 사진 주변 여백 생기면 어색하지 않도록 */
+
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+  border-radius: 16px; /* 모서리 둥글게 */
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+.subtitle {
+  text-align: center;
+  color: #aaa;
+  font-size: 1.2rem;
+  margin-top: 100px; 
+  margin-bottom: 8px;
+  letter-spacing: 1px;
+}
+
+
+.game-title {
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Anton', sans-serif;
+  color: #F97A00;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 8px #000;
+  letter-spacing: 2px;
+
+}
+.gradient-title {
+  font-size: 4rem;
+  font-weight: bold;
+  background: linear-gradient(to right, #a04e2a, #686868); /* 레드브라운 + 어두운 회색 */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  font-family: 'Anton', sans-serif;
+
+  /* 텍스트 섀도우 추가 (밝은 베이지빛으로 윤곽 강조) */
+  text-shadow: 1px 1px 6px rgba(255, 228, 200, 0.2);
+}
+
+
+
+.game-slider {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  height: 500px;
+  margin: 0 auto 30px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background-color: #000;
+}
+
+.game-slides {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.game-slide {
+  flex: 0 0 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-slide.active {
+  display: flex;
+}
+
+.game-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  background-color: #000;
+}
+
+.bar-pagination {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  height: 20px;
+  align-items: center;
+  z-index: 10;
+}
+
+
+.bar {
+  width: 40px;
+  height: 6px;
+  background-color: #555;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.bar.active {
+  background-color: #F97A00;
+}
+
+
+.game-slide video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  max-height: 500px;
+  background-color: #000;
+  border-radius: 12px;
+}
+
+.game-description {
+  text-align: center;
+  font-size: 1.2rem;
+  /*color: #aaa;   */
+  margin-top: 20px;
+  line-height: 1.5;
+  margin-top: 100px; 
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 40px auto;
+  max-width: 1000px;
+}
+
+.gallery img,
+.gallery video {
+  width: 300px;
+  border-radius: 10px;
+  border: 1px solid #333;
+  object-fit: cover;
+}
+.gallery-link {
+  display: inline-block;
+  margin-top: 60px;
+  font-weight: bold;
+  color: #F97A00;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: all 0.3s;
+}
+
+.gallery-link:hover {
+  border-bottom: 1px solid #F97A00;
+}

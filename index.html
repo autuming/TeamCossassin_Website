@@ -1,178 +1,264 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Team Cossassin - Game Dev Team</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--탭 아이콘-->
+    <link rel="icon" type="image/png" href="img/logo.png">
+
+
+    <title>Brain Explosion - 인디 게임 개발팀</title>
+
+    <!-- 메타 태그 (seo 수정필요)-->
+    <meta name="description" content="게임 개발 팀 BRAIN EXPLOSION 을 소개하는 사이트입니다. 다양한 인디 게임을 만나보세요.">
+    <meta name="keywords" content="Brain Explosion, 인디 게임, 게임 개발팀, 게임, 게임 기획, 게임 아트, 사이버펑크, 유니티, 액션, 코딩">
+    <meta property="og:title" content="Brain Explosion - 인디 게임 개발팀">
+    <meta property="og:description" content="게임 개발팀 Brain Explosion입니다.">
+    <meta property="og:url" content="https://autuming.github.io/TeamCossassin_Website/">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+    
+    <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="container">
+    <!-- 파티클 배경 -->
+    <div class="particles" id="particles"></div>
+
+    <!-- 네비게이션 -->
+    <nav>
+        <div class="nav-container">
+            <div class="logo">BRAIN EXPLOSION</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#game">Games</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- 히어로 섹션 -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>BRAIN EXPLOSION</h1>
+            <p>창의적인 아이디어로 혁신적인 게임을 만드는 인디 게임 개발팀입니다.</p>
+            <a href="#game" class="cta-button">Our games!</a>
+        </div>
+    </section>
+
+    <!-- 게임 섹션 -->
+    <section class="section" id="game">
+        <h2 class="section-title fade-in">Our games</h2>
+        <div class="game-title fade-in">#1. NOSTALGIA</div>
+        <div class="game-showcase">
+            <div class="game-video-container fade-in">
+                <div class="video-wrapper">
+                    <video controls poster="img/video-thumbnail-1.jpg">
+                        <source src="videos/short/11.mp4" type="video/mp4">
+                        동영상을 지원하지 않는 브라우저입니다.
+                    </video>
+                </div>
+                <div class="video-description">
+                    <h3>게임 디테일</h3>
+                    <p>전투씬을 디테일하게 보여줍니다.</p>
+                </div>
+            </div>
+            
+            <div class="game-video-container fade-in">
+                <div class="video-wrapper">
+                    <video controls poster="img/video-thumbnail-2.jpg">
+                        <source src="videos/short/22.mp4" type="video/mp4">
+                        동영상을 지원하지 않는 브라우저입니다.
+                    </video>
+                </div>
+                <div class="video-description">
+                    <h3>코딩 게임</h3>
+                    <p>재미있는 게임입니다., 게임 설명을 어떻게 해야 할까.</p>
+                </div>
+            </div>
+            
+            <div class="game-video-container fade-in">
+                <div class="video-wrapper">
+                    <video controls poster="img/video-thumbnail-3.jpg">
+                        <source src="videos/short/44.mp4" type="video/mp4">
+                        동영상을 지원하지 않는 브라우저입니다.
+                    </video>
+                </div>
+                <div class="video-description">
+                    <h3>전투 시스템</h3>
+                    <p>역동적인 액션과 전략적 요소가 결합된 전투 시스템을 경험해보세요. 다양한 무기와 스킬을 조합하여 적들을 물리치세요.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 팀 섹션 -->
+    <section class="section" id="team">
+        <h2 class="section-title fade-in">TEAM MEMBERS</h2>
+        <div class="team-grid">
+            <div class="member-card fade-in">
+                <h3 class="member-name">이가을</h3>
+                <p class="member-role">팀 대표 & 기획</p>
+                <span class="member-game">Team leading & Game Design</span>
+            </div>
+            <div class="member-card fade-in">
+                <h3 class="member-name">이재학</h3>
+                <p class="member-role">게임 기획자</p>
+                <span class="member-game">Game Planning</span>
+            </div>
+            <div class="member-card fade-in">
+                <h3 class="member-name">테라 | Terrrrrrra</h3>
+                <p class="member-role">리드 개발자</p>
+                <span class="member-game">Lead Developer</span>
+            </div>
+            <div class="member-card fade-in">
+                <h3 class="member-name">신창호</h3>
+                <p class="member-role">서브 개발자</p>
+                <span class="member-game">Sub Developer</span>
+            </div>
+            <div class="member-card fade-in">
+                <h3 class="member-name">조화영</h3>
+                <p class="member-role">웹 개발자 & 홍보</p>
+                <span class="member-game">Web Dev & Marketing</span>
+            </div>
+            <div class="member-card fade-in">
+                <h3 class="member-name">신고은</h3>
+                <p class="member-role">게임 아트</p>
+                <span class="member-game">Game Artist</span>
+            </div>
+            <div class="member-card fade-in">
+                <h3 class="member-name">커피송</h3>
+                <p class="member-role">게임 아트</p>
+                <span class="member-game">Game Artist</span>
+            </div>
+        </div>
+    </section>
+
     
-    <header class="site-header">
-      <div class="nav-container">
-        <a href="#" class="logo-left">
-          <img src="img/logo.png" alt="Team Cossassin 로고" class="logo-img" />
-        </a>
-        
-        <nav class="nav-right">
-         <a href="#about">About</a>
-         <a href="#team">Contact</a>
-         <a href="#aboutgame">Our Games</a>
-         <a href="gallery.html">Gallery</a>
-        </nav>
-      </div>
-    </header>
 
-<div class="team-title">
-  <span class="typing">Team Cossassin</span>
-</div>
-
-
-
-  <section class="main-image-slider">
-    <div class="slider">
-      <img src="img/meet2.jpg" alt="대표 이미지1" class="slide active">
-      <img src="img/meet3.jpg" alt="대표 이미지2" class="slide">
-      <img src="img/2222.png" alt="대표 이미지3" class="slide">
-    </div>
-  </section>
-
-  <section class="intro" id="about">
-      <div class="section-title">About Us</div>
-      <p class="intro-text">
-        TEAM COSSASSIN은 날카로운 기획력과 정밀한 코드로, 장르의 틈새를 파고드는 게임 개발팀입니다.<br/>
-        우리는 색다른 게임 아이디어를 현실로 만드는 데 집중하며,<br/>
-        재미와 감동, 쾌감을 게임을 통해 동시에 전달합니다.<br><br>
-        <a href="gallery.html" class="gallery-link">→ 팀 갤러리 보러가기</a>
-      </p>
+    <!-- 연락 섹션 -->
+    <section class="section" id="contact">
+        <div class="contact fade-in">
+            <h2 class="section-title">Follow Us</h2>
+            <!--<p>함께해요 하하하하</p>-->
+            <div class="contact-links">
+                <a href="#" class="contact-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>kanaecho13@gmail.com</span>
+                </a>
+                <a href="https://youtube.com/@teamcossassin" class="contact-link">
+                    <i class="fab fa-youtube"></i>
+                    <span>YouTube</span>
+                </a>
+                <a href="https://www.instagram.com/team_cossassin/?igsh=ZDI4c3lkZWxrODVp" class="contact-link">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </div>
     </section>
-
-
-    <section class="game-section" id="aboutgame">
-  <div class="section-title">About Our Games</div>
-  <p class="subtitle">향수를 자극하는 감성 액션</p>
-<h2 class="gradient-title">NOSTALGIA</h2>
-
-
-
-
-  <div class="game-slider">
-  <div class="game-slides">
-    <div class="game-slide active">
-      <video src="videos/short/11.mp4" autoplay muted loop playsinline></video>
-    </div>
-    <div class="game-slide">
-      <video src="videos/short/22.mp4" autoplay muted loop playsinline></video>
-    </div>
-    <div class="game-slide">
-      <video src="videos/short/33.mp4" autoplay muted loop playsinline></video>
-    </div>
-  </div>
-
-  <div class="bar-pagination">
-    <span class="bar active" onclick="currentSlide(0)"></span>
-    <span class="bar" onclick="currentSlide(1)"></span>
-    <span class="bar" onclick="currentSlide(2)"></span>
-  </div>
-</div>
-
-  <p class="game-description">
-    Team Cossassin이 만든 게임들을 만나보세요. <br>
-    다양한 장르와 감각적인 연출이 어우러진 작품들을 소개합니다. <br>
-    --<br><br>
-  </p>
-</section>
-
-
-
-    <section class="team-cards" id="team">
-      <div class="section-title">Our Team</div>
-      <div class="card-container">
-      <div class="card">
-        <h3>Gaeul Lee</h3>
-        <p>대표<br><span class="role">Team Leader</span></p>
-      </div>
-      <div class="card">
-      <h3>테라 | Terrrrrrra</h3>
-      <p>메인 개발자<br><span class="role">Lead Developer</span></p>
-    </div>
-    <div class="card">
-      <h3>Changho Shin</h3>
-      <p>서브 개발자<br><span class="role">Assistant Developer</span></p>
-    </div>
-    <div class="card">
-      <h3>Hwayoung Cho</h3>
-        <p>웹 제작, SNS 담당자<br><span class="role">Web Developer, Social Media Manager</span></p>
-    </div>
-    <div class="card">
-      <h3>Jaejun Kim</h3>
-      <p>게임 아트 담당자<br><span class="role">Game Artist</span></p>
-    </div>
-    <div class="card">
-      <h3>Jaehak Lee</h3>
-      <p>기획<br><span class="role">Game Design</span></p>
-    </div>
-  </div>
-</section>
-
-
-
-
-
-    <section class="social-icons">
-      <div class="section-title">Follow Us</div>
-      <a href="https://www.instagram.com/team_cossassin/?igsh=ZDI4c3lkZWxrODVp" target="_blank">
-        <img src="img/instagram.png" alt="Instagram 로고" class="icon-img" />
-        Instagram
-      </a>
-      <a href="https://youtube.com/@teamcossassin" target="_blank">
-        <img src="img/youtube.png" alt="YouTube 로고" class="icon-img" />
-        YouTube
-      </a>
-    </section>
-
 
     <footer>
-      &copy; 2025 Team Cossassin. All rights reserved.
+      &copy; 2025 Brain Explosion. All rights reserved.
     </footer>
-  </div>
 
-  
-<script>
-  const slidesMain = document.querySelectorAll('.slide');
-  let currentMain = 0;
+    <script>
+        // 파티클 생성
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 50;
 
-  function showNextSlide() {
-    slidesMain[currentMain].classList.remove('active');
-    currentMain = (currentMain + 1) % slidesMain.length;
-    slidesMain[currentMain].classList.add('active');
-  }
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 3 + 3) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
 
-  setInterval(showNextSlide, 5000); // 5초마다 자동 전환
-</script>
+        // 스크롤 애니메이션
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
 
-<script>
-  let currentIndex = 0;
-const gameSlideItems = document.querySelectorAll('.game-slide');
-const bars = document.querySelectorAll('.bar');
-const totalGameSlides = bars.length;
+        // 부드러운 스크롤
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-function showGameSlide(index) {
-  gameSlideItems.forEach(slide => slide.classList.remove('active'));
-  bars.forEach(bar => bar.classList.remove('active'));
-  gameSlideItems[index].classList.add('active');
-  bars[index].classList.add('active');
-  currentIndex = index;
-}
+        // 네비게이션 스크롤 효과
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.9)';
+            }
+            
+            handleScrollAnimations();
+        });
 
-function currentSlide(index) {
-  showGameSlide(index);
-}
+        // 초기화
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            handleScrollAnimations();
+        });
 
-</script>
+        // 마우스 따라다니는 효과
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.createElement('div');
+            cursor.style.position = 'fixed';
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursor.style.width = '10px';
+            cursor.style.height = '10px';
+            cursor.style.background = 'rgba(249, 122, 0, 0.3)';
+            cursor.style.borderRadius = '50%';
+            cursor.style.pointerEvents = 'none';
+            cursor.style.zIndex = '9999';
+            cursor.style.animation = 'fade-out 1s ease-out forwards';
+            
+            document.body.appendChild(cursor);
+            
+            setTimeout(() => {
+                cursor.remove();
+            }, 1000);
+        });
 
-
+        // 페이드 아웃 애니메이션
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes fade-out {
+                0% { opacity: 1; transform: scale(1); }
+                100% { opacity: 0; transform: scale(2); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>

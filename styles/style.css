@@ -75,7 +75,23 @@ nav {
     margin: 0 auto;
 }
 
-.logo {
+.logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        
+        
+}
+
+.logo-img {
+            height: 50px;
+            width: auto;
+}
+
+
+
+/*.
+logo {
     font-size: 28px;
     font-weight: 800;
     background: linear-gradient(45deg, #F97A00, #00ffff, #ffff00);
@@ -99,7 +115,7 @@ nav {
     transform: translate(2px, 2px);
     opacity: 0.3;
 }
-
+*/
 .nav-links {
     display: flex;
     gap: 40px;

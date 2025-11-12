@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="img/sa.png">
+    <title>Gallery - Brain Explosion</title>
+    
+    <meta name="description" content="Brain Explosion 팀의 활동 사진과 작업 과정을 담은 갤러리입니다.">
+    <meta name="keywords" content="Brain Explosion, 갤러리, 게임 개발, 팀 활동">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles/gallery.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <nav>
+        <div class="nav-container">
+            <div class="logo-container">
+                <img src="img/logo.png" alt="Brain Explosion Logo" class="logo-img">
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#game">Games</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="gallery-hero">
+        <div>
+            <h1>GALLERY</h1>
+            <p>우리 팀의 활동과 작업 과정을 담은 갤러리입니다</p>
+        </div>
+    </section>
+
+    <div class="gallery-container">
+        <div class="gallery-filters">
+            <button class="filter-btn active" data-filter="all">전체</button>
+            <button class="filter-btn" data-filter="artwork">아트워크</button>
+            <button class="filter-btn" data-filter="event">이벤트</button>
+        </div>
+
+        <div class="gallery-grid" id="gallery-grid">
+
+            <div class="gallery-item fade-in" data-category="event">
+                <img src="img/meet3.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
+                <div class="gallery-item-info">
+                    <h3>팀 미팅</h3>
+                    <p>주간 회의에서 프로젝트 방향성을 논의하는 모습입니다.</p>
+                    <span class="gallery-item-tag">이벤트</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="artwork">
+                <img src="img/7-1.jpg" alt="닉토디자인" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Background+Art'">
+                <div class="gallery-item-info">
+                    <h3>NOSTALGIA - 닉토</h3>
+                    <p>NOSTALGIA 게임의 주인공 캐릭터의 디자인입니다.</p>
+                    <span class="gallery-item-tag">아트워크</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="artwork">
+                <img src="img/dot.png" alt="닉토디자인" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Background+Art'">
+                <div class="gallery-item-info">
+                    <h3>NOSTALGIA - 닉토</h3>
+                    <p>NOSTALGIA 게임의 주인공 닉토의 도트 아트입니다.</p>
+                    <span class="gallery-item-tag">아트워크</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="event">
+                <img src="img/meet2.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
+                <div class="gallery-item-info">
+                    <h3>팀 미팅</h3>
+                    <p>주간 회의에서 프로젝트 진행 상황을 공유하였습니다.</p>
+                    <span class="gallery-item-tag">이벤트</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="event">
+                <img src="img/meet1.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
+                <div class="gallery-item-info">
+                    <h3>팀 미팅</h3>
+                    <p>주간 회의가 끝나고 각자의 작업을 수행하는 모습입니다.</p>
+                    <span class="gallery-item-tag">이벤트</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="event">
+                <img src="img/meet4.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
+                <div class="gallery-item-info">
+                    <h3>팀 미팅</h3>
+                    <p>주간 회의에서 각자의 아이디어를 나누는 모습입니다.</p>
+                    <span class="gallery-item-tag">이벤트</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="event">
+                <img src="img/yy.jpg" alt="이벤트 참가" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Game+Event'">
+                <div class="gallery-item-info">
+                    <h3>청년활동기록 전시_유유기지 인천</h3>
+                    <p>청년활동기록 전시 행사에 참여했습니다. 2025년 9월 19일까지의 작업물을 전시하였습니다.</p>
+                    <span class="gallery-item-tag">이벤트</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="event">
+                <img src="img/surf.jpeg" alt="이벤트 참가" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Game+Event'">
+                <div class="gallery-item-info">
+                    <h3>SURF 2025 INCHEON</h3>
+                    <p>SURF 2025 INCHEON 행사에 참여했습니다. 여러 스타트업 부스를 방문하며 최신 트렌드를 파악하고 새로운 아이디어와 동기부여를 얻었습니다.</p>
+                    <span class="gallery-item-tag">이벤트</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="upload-section fade-in">
+            <h3>더 많은 콘텐츠 업데이트 예정</h3>
+            <p>Brain Explosion 팀의 새로운 활동과 작업물이 계속해서 추가됩니다.</p>
+        </div>
+    </div>
+
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="lightbox-close">&times;</span>
+        <button class="lightbox-prev" id="lightbox-prev">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <button class="lightbox-next" id="lightbox-next">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" id="lightbox-img">
+            <div class="lightbox-caption" id="lightbox-caption">
+                <h3 id="lightbox-title"></h3>
+                <p id="lightbox-description"></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Brain Explosion. All rights reserved.
+    </footer>
+
+    <script>
+        // 파티클 생성
+        function createParticles() {
+            const particlesContainer = document.getElementById('particles');
+            const particleCount = 60;
+
+            for (let i = 0; i < particleCount; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.top = Math.random() * 100 + '%';
+                particle.style.animationDelay = Math.random() * 6 + 's';
+                particle.style.animationDuration = (Math.random() * 4 + 4) + 's';
+                particlesContainer.appendChild(particle);
+            }
+        }
+
+        // 스크롤 애니메이션
+        function handleScrollAnimations() {
+            const elements = document.querySelectorAll('.fade-in');
+            
+            elements.forEach(element => {
+                const elementTop = element.getBoundingClientRect().top;
+                const elementVisible = 150;
+                
+                if (elementTop < window.innerHeight - elementVisible) {
+                    element.classList.add('visible');
+                }
+            });
+        }
+
+        // 필터 기능
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                filterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const filter = btn.getAttribute('data-filter');
+
+                galleryItems.forEach(item => {
+                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // 라이트박스
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImg = document.getElementById('lightbox-img');
+        const lightboxClose = document.getElementById('lightbox-close');
+        const lightboxPrev = document.getElementById('lightbox-prev');
+        const lightboxNext = document.getElementById('lightbox-next');
+        const lightboxTitle = document.getElementById('lightbox-title');
+        const lightboxDescription = document.getElementById('lightbox-description');
+        
+        let currentImageIndex = 0;
+        const galleryItemsArray = Array.from(galleryItems);
+
+        function showLightboxImage(index) {
+            const item = galleryItemsArray[index];
+            const img = item.querySelector('img');
+            const title = item.querySelector('h3').textContent;
+            const description = item.querySelector('p').textContent;
+            
+            lightboxImg.src = img.src;
+            lightboxImg.alt = img.alt;
+            lightboxTitle.textContent = title;
+            lightboxDescription.textContent = description;
+            currentImageIndex = index;
+            lightbox.classList.add('active');
+        }
+
+        galleryItems.forEach((item, index) => {
+            item.addEventListener('click', () => {
+                showLightboxImage(index);
+            });
+        });
+
+        lightboxPrev.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex - 1 + galleryItemsArray.length) % galleryItemsArray.length;
+            showLightboxImage(currentImageIndex);
+        });
+
+        lightboxNext.addEventListener('click', (e) => {
+            e.stopPropagation();
+            currentImageIndex = (currentImageIndex + 1) % galleryItemsArray.length;
+            showLightboxImage(currentImageIndex);
+        });
+
+        lightboxClose.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+
+        // ESC 키로 라이트박스 닫기, 화살표 키로 이미지 넘기기
+        document.addEventListener('keydown', (e) => {
+            if (lightbox.classList.contains('active')) {
+                if (e.key === 'Escape') {
+                    lightbox.classList.remove('active');
+                } else if (e.key === 'ArrowLeft') {
+                    currentImageIndex = (currentImageIndex - 1 + galleryItemsArray.length) % galleryItemsArray.length;
+                    showLightboxImage(currentImageIndex);
+                } else if (e.key === 'ArrowRight') {
+                    currentImageIndex = (currentImageIndex + 1) % galleryItemsArray.length;
+                    showLightboxImage(currentImageIndex);
+                }
+            }
+        });
+
+        // 네비게이션 스크롤 효과
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 100) {
+                nav.style.background = 'rgba(10, 10, 10, 0.95)';
+            } else {
+                nav.style.background = 'rgba(10, 10, 10, 0.9)';
+            }
+            
+            handleScrollAnimations();
+        });
+
+        // 초기화
+        document.addEventListener('DOMContentLoaded', () => {
+            createParticles();
+            handleScrollAnimations();
+        });
+
+        // 마우스 효과
+        document.addEventListener('mousemove', (e) => {
+            const cursor = document.createElement('div');
+            cursor.style.position = 'fixed';
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+            cursor.style.width = '8px';
+            cursor.style.height = '8px';
+            cursor.style.background = 'rgba(249, 122, 0, 0.4)';
+            cursor.style.borderRadius = '50%';
+            cursor.style.pointerEvents = 'none';
+            cursor.style.zIndex = '9999';
+            cursor.style.animation = 'cursor-fade 1s ease-out forwards';
+            
+            document.body.appendChild(cursor);
+            
+            setTimeout(() => {
+                cursor.remove();
+            }, 1000);
+        });
+
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes cursor-fade {
+                0% { opacity: 1; transform: scale(1); }
+                100% { opacity: 0; transform: scale(2.5); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+</html>

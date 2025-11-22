@@ -152,12 +152,12 @@ nav {
     padding: 4rem 2rem;
 }
 
-/* 필터 버튼 - 개선된 가시성 */
+/* 메인 필터 버튼 */
 .gallery-filters {
     display: flex;
     justify-content: center;
     gap: 0;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     flex-wrap: wrap;
     background: rgba(20, 20, 20, 0.8);
     padding: 0.5rem 0;
@@ -168,6 +168,15 @@ nav {
     width: 100%;
     margin-left: 0;
     margin-right: 0;
+    position: relative;
+    z-index: 100;
+}
+
+/* 드롭다운 컨테이너 */
+.filter-dropdown {
+    position: relative;
+    display: inline-block;
+    z-index: 101;
 }
 
 .filter-btn {
@@ -216,6 +225,65 @@ nav {
     width: 90%;
     height: 4px;
     box-shadow: 0 0 15px rgba(249, 122, 0, 0.8);
+}
+
+/* 서브 필터 - 드롭다운 스타일 */
+.sub-filters {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    background: rgba(20, 20, 20, 0.95);
+    border: 2px solid rgba(249, 122, 0, 0.3);
+    border-top: none;
+    backdrop-filter: blur(10px);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    z-index: 102;
+    min-width: 200px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.filter-dropdown:hover .sub-filters,
+.sub-filters.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.sub-filter-btn {
+    padding: 1rem 2rem;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(249, 122, 0, 0.1);
+    color: #aaa;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+}
+
+.sub-filter-btn:last-child {
+    border-bottom: none;
+}
+
+.sub-filter-btn:hover {
+    background: rgba(249, 122, 0, 0.2);
+    color: #f97a00;
+    padding-left: 2.5rem;
+}
+
+.sub-filter-btn.active {
+    background: rgba(249, 122, 0, 0.3);
+    color: #fff;
+    font-weight: 600;
+    border-left: 3px solid #f97a00;
 }
 
 /* 갤러리 그리드 */
@@ -323,7 +391,6 @@ nav {
     border-radius: 10px;
     max-width: 600px;
     text-align: center;
-    border: 2px solid rgba(249, 122, 0, 0.3);
 }
 
 .lightbox-caption h3 {
@@ -346,7 +413,6 @@ nav {
     font-size: 2.5rem;
     color: white;
     cursor: pointer;
-    background: rgba(249, 122, 0, 0.8);
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -359,7 +425,6 @@ nav {
 }
 
 .lightbox-close:hover {
-    background: #f97a00;
     transform: rotate(90deg);
 }
 
@@ -490,6 +555,21 @@ footer {
     .filter-btn {
         padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
+    }
+
+    .filter-dropdown {
+        width: 100%;
+    }
+
+    .sub-filters {
+        position: relative;
+        width: 100%;
+        min-width: auto;
+    }
+
+    .sub-filter-btn {
+        padding: 0.8rem 1.5rem;
+        font-size: 0.85rem;
     }
 
     .lightbox-close {

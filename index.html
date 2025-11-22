@@ -56,45 +56,64 @@
     <!-- 게임 섹션 -->
     <section class="section" id="game">
         <h2 class="section-title fade-in">Our games</h2>
-        <div class="game-title fade-in">#1. NOSTALGIA</div>
-        <div class="game-showcase">
-            <div class="game-video-container fade-in">
-                <div class="video-wrapper">
-                    <video controls poster="img/video-thumbnail-1.jpg">
-                        <source src="videos/short/11.mp4" type="video/mp4">
-                        동영상을 지원하지 않는 브라우저입니다.
-                    </video>
+        <div class="game-container fade-in">
+            <div class="game-title">#1. NOSTALGIA</div>
+            
+            <div class="game-slider">
+                <button class="slider-btn prev-btn" id="prevBtn">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                
+                <div class="slider-wrapper">
+                    <div class="game-video-container active">
+                        <div class="video-wrapper">
+                            <video autoplay loop muted playsinline poster="img/video-thumbnail-1.jpg">
+                                <source src="videos/short/11.mp4" type="video/mp4">
+                                동영상을 지원하지 않는 브라우저입니다.
+                            </video>
+                        </div>
+                        <div class="video-description">
+                            <h3>게임 디테일</h3>
+                            <p>전투씬을 디테일하게 보여줍니다.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="game-video-container">
+                        <div class="video-wrapper">
+                            <video autoplay loop muted playsinline poster="img/video-thumbnail-2.jpg">
+                                <source src="videos/short/22.mp4" type="video/mp4">
+                                동영상을 지원하지 않는 브라우저입니다.
+                            </video>
+                        </div>
+                        <div class="video-description">
+                            <h3>코딩 게임</h3>
+                            <p>재미있는 게임입니다., 게임 설명을 어떻게 해야 할까.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="game-video-container">
+                        <div class="video-wrapper">
+                            <video autoplay loop muted playsinline poster="img/video-thumbnail-3.jpg">
+                                <source src="videos/short/44.mp4" type="video/mp4">
+                                동영상을 지원하지 않는 브라우저입니다.
+                            </video>
+                        </div>
+                        <div class="video-description">
+                            <h3>전투 시스템</h3>
+                            <p>역동적인 액션과 전략적 요소가 결합된 전투 시스템을 경험해보세요. 다양한 무기와 스킬을 조합하여 적들을 물리치세요.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="video-description">
-                    <h3>게임 디테일</h3>
-                    <p>전투씬을 디테일하게 보여줍니다.</p>
-                </div>
+                
+                <button class="slider-btn next-btn" id="nextBtn">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
             </div>
             
-            <div class="game-video-container fade-in">
-                <div class="video-wrapper">
-                    <video controls poster="img/video-thumbnail-2.jpg">
-                        <source src="videos/short/22.mp4" type="video/mp4">
-                        동영상을 지원하지 않는 브라우저입니다.
-                    </video>
-                </div>
-                <div class="video-description">
-                    <h3>코딩 게임</h3>
-                    <p>재미있는 게임입니다., 게임 설명을 어떻게 해야 할까.</p>
-                </div>
-            </div>
-            
-            <div class="game-video-container fade-in">
-                <div class="video-wrapper">
-                    <video controls poster="img/video-thumbnail-3.jpg">
-                        <source src="videos/short/44.mp4" type="video/mp4">
-                        동영상을 지원하지 않는 브라우저입니다.
-                    </video>
-                </div>
-                <div class="video-description">
-                    <h3>전투 시스템</h3>
-                    <p>역동적인 액션과 전략적 요소가 결합된 전투 시스템을 경험해보세요. 다양한 무기와 스킬을 조합하여 적들을 물리치세요.</p>
-                </div>
+            <div class="slider-indicators">
+                <span class="indicator active" data-index="0"></span>
+                <span class="indicator" data-index="1"></span>
+                <span class="indicator" data-index="2"></span>
             </div>
         </div>
     </section>
@@ -111,7 +130,7 @@
             <div class="member-card fade-in">
                 <h3 class="member-name">이재학</h3>
                 <p class="member-role">게임 기획자</p>
-                <span class="member-game">Game Planning</span>
+                <span class="member-game">Game Design</span>
             </div>
             <div class="member-card fade-in">
                 <h3 class="member-name">테라 | Terrrrrrra</h3>
@@ -146,18 +165,18 @@
     <!-- 연락 섹션 -->
     <section class="section" id="contact">
         <div class="contact fade-in">
-            <h2 class="section-title">Follow Us</h2>
+            <h2 class="section-title">Contact Us</h2>
             <!--<p>함께해요 하하하하</p>-->
             <div class="contact-links">
                 <a href="#" class="contact-link">
                     <i class="fas fa-envelope"></i>
                     <span>zhtotls135@gmail.com</span>
                 </a>
-                <a href="https://youtube.com/@teamcossassin" class="contact-link">
+                <a href="https://www.youtube.com/@TeamBrainExplosion" class="contact-link">
                     <i class="fab fa-youtube"></i>
                     <span>YouTube</span>
                 </a>
-                <a href="https://www.instagram.com/team_cossassin/?igsh=ZDI4c3lkZWxrODVp" class="contact-link">
+                <a href="https://www.instagram.com/team_brainexplosion/" class="contact-link">
                     <i class="fab fa-instagram"></i>
                     <span>Instagram</span>
                 </a>
@@ -185,6 +204,80 @@
                 particlesContainer.appendChild(particle);
             }
         }
+
+        // 게임 슬라이더
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.game-video-container');
+        const indicators = document.querySelectorAll('.indicator');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            // 모든 비디오 일시정지
+            slides.forEach(slide => {
+                const video = slide.querySelector('video');
+                if (video) {
+                    video.pause();
+                }
+            });
+
+            // 현재 슬라이드 표시
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                    // 현재 슬라이드의 비디오 자동 재생
+                    const video = slide.querySelector('video');
+                    if (video) {
+                        video.currentTime = 0; // 처음부터 재생
+                        video.play().catch(err => {
+                            console.log('자동 재생 실패:', err);
+                        });
+                    }
+                }
+            });
+
+            // 인디케이터 업데이트
+            indicators.forEach((indicator, i) => {
+                indicator.classList.remove('active');
+                if (i === index) {
+                    indicator.classList.add('active');
+                }
+            });
+
+            currentSlide = index;
+        }
+
+        // 다음 슬라이드
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // 이전 슬라이드
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        }
+
+        // 버튼 이벤트
+        document.getElementById('nextBtn').addEventListener('click', nextSlide);
+        document.getElementById('prevBtn').addEventListener('click', prevSlide);
+
+        // 인디케이터 클릭
+        indicators.forEach((indicator, index) => {
+            indicator.addEventListener('click', () => {
+                showSlide(index);
+            });
+        });
+
+        // 키보드 네비게이션
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevSlide();
+            } else if (e.key === 'ArrowRight') {
+                nextSlide();
+            }
+        });
 
         // 스크롤 애니메이션
         function handleScrollAnimations() {
@@ -230,6 +323,14 @@
         document.addEventListener('DOMContentLoaded', () => {
             createParticles();
             handleScrollAnimations();
+            
+            // 첫 번째 영상 자동 재생
+            const firstVideo = document.querySelector('.game-video-container.active video');
+            if (firstVideo) {
+                firstVideo.play().catch(err => {
+                    console.log('자동 재생 실패:', err);
+                });
+            }
         });
 
         // 마우스 따라다니는 효과

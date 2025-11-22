@@ -41,25 +41,41 @@
         <div class="gallery-filters">
             <button class="filter-btn active" data-filter="all">전체</button>
             <button class="filter-btn" data-filter="artwork">아트워크</button>
-            <button class="filter-btn" data-filter="event">이벤트</button>
+            <div class="filter-dropdown">
+                <button class="filter-btn" data-filter="teamevent">팀 활동</button>
+                <div class="sub-filters" id="sub-filters">
+                    <button class="sub-filter-btn active" data-subfilter="activity1">2025년 청년모임지원(IN-JOY)</button>
+                    <button class="sub-filter-btn" data-subfilter="activity2">활동2</button>
+                </div>
+            </div>
         </div>
 
         <div class="gallery-grid" id="gallery-grid">
 
-            <div class="gallery-item fade-in" data-category="event">
-                <img src="img/meet3.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
-                <div class="gallery-item-info">
-                    <h3>팀 미팅</h3>
-                    <p>주간 회의에서 프로젝트 방향성을 논의하는 모습입니다.</p>
-                    <span class="gallery-item-tag">이벤트</span>
-                </div>
-            </div>
-
+            <!-- 아트워크 카테고리 -->
             <div class="gallery-item fade-in" data-category="artwork">
                 <img src="img/7-1.jpg" alt="닉토디자인" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Background+Art'">
                 <div class="gallery-item-info">
                     <h3>NOSTALGIA - 닉토</h3>
                     <p>NOSTALGIA 게임의 주인공 캐릭터의 디자인입니다.</p>
+                    <span class="gallery-item-tag">아트워크</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="artwork">
+                <img src="img/19.jpg" alt="베라디자인" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Background+Art'">
+                <div class="gallery-item-info">
+                    <h3>NOSTALGIA - 베라</h3>
+                    <p>NOSTALGIA 게임의 주인공의 연인 캐릭터 디자인입니다.</p>
+                    <span class="gallery-item-tag">아트워크</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="artwork">
+                <img src="img/13.jpg" alt="오프닝디자인" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Background+Art'">
+                <div class="gallery-item-info">
+                    <h3>NOSTALGIA - 오프닝화면</h3>
+                    <p>NOSTALGIA 게임의 오프닝 장면 디자인입니다.</p>
                     <span class="gallery-item-tag">아트워크</span>
                 </div>
             </div>
@@ -73,50 +89,78 @@
                 </div>
             </div>
 
-            <div class="gallery-item fade-in" data-category="event">
+            <!-- 팀 활동 - 활동 1 카테고리 -->
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity1">
+                <img src="img/meet3.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
+                <div class="gallery-item-info">
+                    <h3>주간 미팅 - 프로젝트 논의</h3>
+                    <p>주간 회의에서 프로젝트 방향성을 논의하는 모습입니다.</p>
+                    <span class="gallery-item-tag">2025년 청년모임지원(IN-JOY)</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity1">
                 <img src="img/meet2.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
                 <div class="gallery-item-info">
-                    <h3>팀 미팅</h3>
+                    <h3>주간 미팅 - 진행 상황 공유</h3>
                     <p>주간 회의에서 프로젝트 진행 상황을 공유하였습니다.</p>
-                    <span class="gallery-item-tag">이벤트</span>
+                    <span class="gallery-item-tag">2025년 청년모임지원(IN-JOY)</span>
                 </div>
             </div>
 
-            <div class="gallery-item fade-in" data-category="event">
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity1">
                 <img src="img/meet1.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
                 <div class="gallery-item-info">
-                    <h3>팀 미팅</h3>
+                    <h3>주간 미팅 - 작업 수행</h3>
                     <p>주간 회의가 끝나고 각자의 작업을 수행하는 모습입니다.</p>
-                    <span class="gallery-item-tag">이벤트</span>
+                    <span class="gallery-item-tag">2025년 청년모임지원(IN-JOY)</span>
                 </div>
             </div>
 
-            <div class="gallery-item fade-in" data-category="event">
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity1">
                 <img src="img/meet4.jpg" alt="팀 미팅" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Team+Meeting'">
                 <div class="gallery-item-info">
-                    <h3>팀 미팅</h3>
+                    <h3>주간 미팅 - 아이디어 공유</h3>
                     <p>주간 회의에서 각자의 아이디어를 나누는 모습입니다.</p>
-                    <span class="gallery-item-tag">이벤트</span>
+                    <span class="gallery-item-tag">2025년 청년모임지원(IN-JOY)</span>
                 </div>
             </div>
 
-            <div class="gallery-item fade-in" data-category="event">
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity1">
                 <img src="img/yy.jpg" alt="이벤트 참가" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Game+Event'">
                 <div class="gallery-item-info">
                     <h3>청년활동기록 전시_유유기지 인천</h3>
                     <p>청년활동기록 전시 행사에 참여했습니다. 2025년 9월 19일까지의 작업물을 전시하였습니다.</p>
-                    <span class="gallery-item-tag">이벤트</span>
+                    <span class="gallery-item-tag">2025년 청년모임지원(IN-JOY)</span>
                 </div>
             </div>
 
-            <div class="gallery-item fade-in" data-category="event">
-                <img src="img/surf.jpeg" alt="이벤트 참가" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Game+Event'">
+            <!-- <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity2">
+                <img src="img/7-1.jpg" alt="외부 행사" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=External+Event'">
                 <div class="gallery-item-info">
-                    <h3>SURF 2025 INCHEON</h3>
-                    <p>SURF 2025 INCHEON 행사에 참여했습니다. 여러 스타트업 부스를 방문하며 최신 트렌드를 파악하고 새로운 아이디어와 동기부여를 얻었습니다.</p>
-                    <span class="gallery-item-tag">이벤트</span>
+                    <h3>게임 개발 컨퍼런스 참가</h3>
+                    <p>게임 개발 컨퍼런스에 참가하여 NOSTALGIA를 소개했습니다.</p>
+                    <span class="gallery-item-tag">활동 2</span>
                 </div>
             </div>
+
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity2">
+                <img src="img/19.jpg" alt="전시회" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Exhibition'">
+                <div class="gallery-item-info">
+                    <h3>인디 게임 전시회</h3>
+                    <p>인디 게임 전시회에 참가하여 관람객들과 소통했습니다.</p>
+                    <span class="gallery-item-tag">활동 2</span>
+                </div>
+            </div>
+
+            <div class="gallery-item fade-in" data-category="teamevent" data-subcategory="activity2">
+                <img src="img/13.jpg" alt="워크샵" onerror="this.src='https://via.placeholder.com/350x280/1a1a1a/f97a00?text=Workshop'">
+                <div class="gallery-item-info">
+                    <h3>게임 디자인 워크샵</h3>
+                    <p>게임 디자인 워크샵에 참가하여 새로운 기술을 배웠습니다.</p>
+                    <span class="gallery-item-tag">활동 2</span>
+                </div>
+            </div> -->
 
         </div>
 
@@ -178,34 +222,93 @@
             });
         }
 
-        // 필터 기능
+        // 필터 관련 요소들
+        const subFilters = document.getElementById('sub-filters');
         const filterBtns = document.querySelectorAll('.filter-btn');
+        const subFilterBtns = document.querySelectorAll('.sub-filter-btn');
         const galleryItems = document.querySelectorAll('.gallery-item');
+        const filterDropdown = document.querySelector('.filter-dropdown');
 
+        let currentMainFilter = 'all';
+        let currentSubFilter = 'activity1';
+
+        // 드롭다운 호버 이벤트
+        filterDropdown.addEventListener('mouseenter', () => {
+            subFilters.classList.add('visible');
+        });
+
+        filterDropdown.addEventListener('mouseleave', () => {
+            subFilters.classList.remove('visible');
+        });
+
+        // 메인 필터 기능
         filterBtns.forEach(btn => {
             btn.addEventListener('click', () => {
                 filterBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
 
                 const filter = btn.getAttribute('data-filter');
+                currentMainFilter = filter;
 
-                galleryItems.forEach(item => {
-                    if (filter === 'all' || item.getAttribute('data-category') === filter) {
-                        item.style.display = 'block';
-                        setTimeout(() => {
-                            item.style.opacity = '1';
-                            item.style.transform = 'translateY(0)';
-                        }, 10);
-                    } else {
-                        item.style.opacity = '0';
-                        item.style.transform = 'translateY(20px)';
-                        setTimeout(() => {
-                            item.style.display = 'none';
-                        }, 300);
-                    }
-                });
+                // 서브 필터 초기화
+                if (filter !== 'teamevent') {
+                    subFilterBtns.forEach(b => b.classList.remove('active'));
+                    subFilterBtns[0].classList.add('active');
+                    currentSubFilter = 'activity1';
+                }
+
+                // 갤러리 아이템 필터링
+                filterGalleryItems(filter, currentSubFilter);
             });
         });
+
+        // 서브 필터 기능
+        subFilterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                subFilterBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                const subFilter = btn.getAttribute('data-subfilter');
+                currentSubFilter = subFilter;
+                filterGalleryItems('teamevent', subFilter);
+            });
+        });
+
+        // 갤러리 아이템 필터링 함수
+        function filterGalleryItems(mainFilter, subFilter) {
+            galleryItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                const subcategory = item.getAttribute('data-subcategory');
+
+                let shouldShow = false;
+
+                if (mainFilter === 'all') {
+                    shouldShow = true;
+                } else if (mainFilter === 'teamevent') {
+                    if (category === 'teamevent' && subcategory === subFilter) {
+                        shouldShow = true;
+                    }
+                } else {
+                    if (category === mainFilter) {
+                        shouldShow = true;
+                    }
+                }
+
+                if (shouldShow) {
+                    item.style.display = 'block';
+                    setTimeout(() => {
+                        item.style.opacity = '1';
+                        item.style.transform = 'translateY(0)';
+                    }, 10);
+                } else {
+                    item.style.opacity = '0';
+                    item.style.transform = 'translateY(20px)';
+                    setTimeout(() => {
+                        item.style.display = 'none';
+                    }, 300);
+                }
+            });
+        }
 
         // 라이트박스
         const lightbox = document.getElementById('lightbox');

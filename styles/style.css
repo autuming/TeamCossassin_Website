@@ -304,17 +304,17 @@ logo {
 .game-title {
     font-size: 3rem;
     font-weight: 900;
-    text-align: center;
-    margin-bottom: 50px;
+    text-align: left;
+    margin-bottom: 0px;
     position: relative;
-    padding-left: 0;
+    padding-left: 30px;
     display: flex;  
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
 .game-logo {
-    max-width: 500px;
+    max-width: 300px;
     width: 100%;
     height: auto;
     filter: drop-shadow(0 0 20px rgba(249, 122, 0, 0.6));
